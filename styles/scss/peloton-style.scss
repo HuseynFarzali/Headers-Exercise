@@ -1,0 +1,124 @@
+$light-mode-bgc: #fbfbfb;
+$dark-mode-bgc: #151d20;
+
+$up-container-flex-gap: 25%;
+$down-container-flex-gap: 50%;
+
+* {
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: beige;
+    border: 2px dashed black;
+
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    [class$="mode"] {
+        width: 100%;
+        height: 120px;
+        background-color: white;
+
+        box-shadow: 0 0 4px #555;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .light-mode {
+        background-color: $light-mode-bgc;
+
+        .lm-up-container {
+            width: 100%;
+            height: 60%;
+
+            border: 1px solid red;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            gap: $up-container-flex-gap;
+            
+            div {
+                width: fit-content;
+                height: fit-content;
+
+                background-color: aqua;
+            }
+        }
+
+        .lm-down-container {
+            width: 100%;
+            height: 40%;
+
+            border: 1px solid red;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            gap: $down-container-flex-gap;
+
+            div {
+                width: fit-content;
+                height: fit-content;
+
+                background-color: aquamarine;
+            }
+        }
+    }
+
+    .dark-mode {
+        background-color: $dark-mode-bgc;
+
+        .dm-up-container {
+            width: 100%;
+            height: 60%;
+
+            border: 1px solid red;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            gap: $up-container-flex-gap;
+
+            div {
+                width: fit-content;
+                height: fit-content;
+
+                background-color: aquamarine;
+            }
+        }
+
+        .dm-down-container {
+            width: 100%;
+            height: 40%;
+
+            border: 1px solid red;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            gap: $down-container-flex-gap;
+
+            div {
+                width: fit-content;
+                height: fit-content;
+
+                background-color: aquamarine;
+            }
+        }
+    }
+}

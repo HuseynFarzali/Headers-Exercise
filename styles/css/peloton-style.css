@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+  border: 2px dashed black;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+body [class$=mode] {
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  box-shadow: 0 0 4px #555;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .light-mode {
+  background-color: #fbfbfb;
+}
+body .light-mode .lm-up-container {
+  width: 100%;
+  height: 60%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25%;
+}
+body .light-mode .lm-up-container div {
+  width: fit-content;
+  height: fit-content;
+  background-color: aqua;
+}
+body .light-mode .lm-down-container {
+  width: 100%;
+  height: 40%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50%;
+}
+body .light-mode .lm-down-container div {
+  width: fit-content;
+  height: fit-content;
+  background-color: aquamarine;
+}
+body .dark-mode {
+  background-color: #151d20;
+}
+body .dark-mode .dm-up-container {
+  width: 100%;
+  height: 60%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 25%;
+}
+body .dark-mode .dm-up-container div {
+  width: fit-content;
+  height: fit-content;
+  background-color: aquamarine;
+}
+body .dark-mode .dm-down-container {
+  width: 100%;
+  height: 40%;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50%;
+}
+body .dark-mode .dm-down-container div {
+  width: fit-content;
+  height: fit-content;
+  background-color: aquamarine;
+}
